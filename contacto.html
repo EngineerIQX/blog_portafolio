@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="titulo1">Portafolio - contacto</title> <!-- el id define un selector para este h1 y se llamara titulo -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Portafolio</h1>
+        <nav>
+            <ul>
+                <li class="link2"><a href="index.html">Inicio</a></li>
+                <li class="link2"><a href="sobre_mi.html">Sobre mi</a></li>
+                <li class="link2"><a href="proyectos.html">Proyectos</a></li>
+                <li class="link2"><a href="experiencias.html">Experiencias</a></li>
+                <li class="link2"><a href="blog.html">Blog</a></li>
+                <li class="link2"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <h2 id="contacto">Contacto</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="firstName">Nombres:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            <div class="form-group">
+                <label for="lastName">Apellidos:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            <div class="form-group">
+                <label for="identificationType">Tipo de identificación:</label>
+                <select id="identificationType" name="identificationType" required>
+                    <option value="ti">Tarjeta de Identidad</option>
+                    <option value="cc">Cédula de Ciudadanía</option>
+                    <option value="ce">Cédula de Extranjería</option>
+                    <option value="passport">Pasaporte</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Equipos Disponibles:</legend>
+                    <label><input type="checkbox" name="equipments" value="mobile"> Teléfono Móvil</label>
+                    <label><input type="checkbox" name="equipments" value="tablet"> Tablet</label>
+                    <label><input type="checkbox" name="equipments" value="laptop"> Portátil</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <fieldset>
+                    <legend>Trabaja actualmente:</legend>
+                    <label><input type="radio" name="employment" value="yes" required> Sí</label>
+                    <label><input type="radio" name="employment" value="no" required> No</label>
+                </fieldset>
+            </div>
+            <div class="form-group">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </main>
+    <article id="imagen">
+        <pre>   SE BUSCA</pre>
+    </article>  
+    <footer>
+        <p>© 2024 Blog Portafolio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
